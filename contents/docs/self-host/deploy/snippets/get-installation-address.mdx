@@ -9,8 +9,8 @@ if [ -z "$POSTHOG_HOSTNAME" ]; then
 fi
 
 if [ ! -z "$POSTHOG_INSTALLATION" ]; then
-    echo "\n----\nYour PostHog installation is available at: http://${POSTHOG_INSTALLATION}\n----\n"
+    echo -e "\n----\nYour PostHog installation is available at: http://${POSTHOG_INSTALLATION}\n----\n"
 else
-    echo "\n----\nUnable to find the address of your PostHog installation\n----\n"
+    echo -e "\n----\nUnable to find the address of your PostHog installation\n----\n"
 fi
 ```
